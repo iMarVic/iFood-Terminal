@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C0DD262B260804A0007FDCB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD262A260804A0007FDCB7 /* main.swift */; };
+		C0DD264426080599007FDCB7 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263726080598007FDCB7 /* Product.swift */; };
+		C0DD264526080599007FDCB7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263826080598007FDCB7 /* Localization.swift */; };
+		C0DD264626080599007FDCB7 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263926080598007FDCB7 /* Formatter.swift */; };
+		C0DD264726080599007FDCB7 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263A26080598007FDCB7 /* Client.swift */; };
+		C0DD264826080599007FDCB7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263B26080598007FDCB7 /* Login.swift */; };
+		C0DD264926080599007FDCB7 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263C26080598007FDCB7 /* Category.swift */; };
+		C0DD264A26080599007FDCB7 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263D26080598007FDCB7 /* DataBase.swift */; };
+		C0DD264B26080599007FDCB7 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263E26080598007FDCB7 /* Restaurant.swift */; };
+		C0DD264C26080599007FDCB7 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD263F26080598007FDCB7 /* Order.swift */; };
+		C0DD264D26080599007FDCB7 /* CardPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD264026080598007FDCB7 /* CardPayment.swift */; };
+		C0DD264E26080599007FDCB7 /* FormPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD264126080599007FDCB7 /* FormPayment.swift */; };
+		C0DD264F26080599007FDCB7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD264226080599007FDCB7 /* main.swift */; };
+		C0DD265026080599007FDCB7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DD264326080599007FDCB7 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +36,20 @@
 
 /* Begin PBXFileReference section */
 		C0DD2627260804A0007FDCB7 /* iFood - Terminal */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "iFood - Terminal"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0DD262A260804A0007FDCB7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C0DD263626080597007FDCB7 /* iFood - Terminal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iFood - Terminal-Bridging-Header.h"; sourceTree = "<group>"; };
+		C0DD263726080598007FDCB7 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		C0DD263826080598007FDCB7 /* Localization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		C0DD263926080598007FDCB7 /* Formatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		C0DD263A26080598007FDCB7 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		C0DD263B26080598007FDCB7 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C0DD263C26080598007FDCB7 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		C0DD263D26080598007FDCB7 /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
+		C0DD263E26080598007FDCB7 /* Restaurant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		C0DD263F26080598007FDCB7 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		C0DD264026080598007FDCB7 /* CardPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardPayment.swift; sourceTree = "<group>"; };
+		C0DD264126080599007FDCB7 /* FormPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormPayment.swift; sourceTree = "<group>"; };
+		C0DD264226080599007FDCB7 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C0DD264326080599007FDCB7 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +82,20 @@
 		C0DD2629260804A0007FDCB7 /* iFood - Terminal */ = {
 			isa = PBXGroup;
 			children = (
-				C0DD262A260804A0007FDCB7 /* main.swift */,
+				C0DD264026080598007FDCB7 /* CardPayment.swift */,
+				C0DD263C26080598007FDCB7 /* Category.swift */,
+				C0DD263A26080598007FDCB7 /* Client.swift */,
+				C0DD263D26080598007FDCB7 /* DataBase.swift */,
+				C0DD263926080598007FDCB7 /* Formatter.swift */,
+				C0DD264126080599007FDCB7 /* FormPayment.swift */,
+				C0DD264326080599007FDCB7 /* Home.swift */,
+				C0DD263826080598007FDCB7 /* Localization.swift */,
+				C0DD263B26080598007FDCB7 /* Login.swift */,
+				C0DD264226080599007FDCB7 /* main.swift */,
+				C0DD263F26080598007FDCB7 /* Order.swift */,
+				C0DD263726080598007FDCB7 /* Product.swift */,
+				C0DD263E26080598007FDCB7 /* Restaurant.swift */,
+				C0DD263626080597007FDCB7 /* iFood - Terminal-Bridging-Header.h */,
 			);
 			path = "iFood - Terminal";
 			sourceTree = "<group>";
@@ -93,6 +131,7 @@
 				TargetAttributes = {
 					C0DD2626260804A0007FDCB7 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -119,7 +158,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DD262B260804A0007FDCB7 /* main.swift in Sources */,
+				C0DD264E26080599007FDCB7 /* FormPayment.swift in Sources */,
+				C0DD264D26080599007FDCB7 /* CardPayment.swift in Sources */,
+				C0DD264F26080599007FDCB7 /* main.swift in Sources */,
+				C0DD264626080599007FDCB7 /* Formatter.swift in Sources */,
+				C0DD264826080599007FDCB7 /* Login.swift in Sources */,
+				C0DD264526080599007FDCB7 /* Localization.swift in Sources */,
+				C0DD265026080599007FDCB7 /* Home.swift in Sources */,
+				C0DD264C26080599007FDCB7 /* Order.swift in Sources */,
+				C0DD264726080599007FDCB7 /* Client.swift in Sources */,
+				C0DD264B26080599007FDCB7 /* Restaurant.swift in Sources */,
+				C0DD264A26080599007FDCB7 /* DataBase.swift in Sources */,
+				C0DD264426080599007FDCB7 /* Product.swift in Sources */,
+				C0DD264926080599007FDCB7 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,8 +295,16 @@
 		C0DD262F260804A0007FDCB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iFood - Terminal/iFood - Terminal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -253,8 +312,15 @@
 		C0DD2630260804A0007FDCB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iFood - Terminal/iFood - Terminal-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
