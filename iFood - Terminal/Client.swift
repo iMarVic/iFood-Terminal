@@ -93,10 +93,10 @@ class Client {
                         addCard(.debitCard)
                         break
                     } else {
-                        print("\n### Opção inválida, tente novamente:")
+                        print("\n### Opção inválida. Tente novamente")
                     }
                 } else {
-                    print("\n### Opção inválida, tente novamente:")
+                    print("\n### Opção inválida. Tente novamente")
                 }
             }
         }

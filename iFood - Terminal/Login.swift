@@ -24,7 +24,7 @@ func login(dataBase: DataBase) -> Client {
         
         for client in dataBase.clients {
             if client.email == email && client.password == password {
-                print("\n\n### Olá, \(client.name) ! \n\n")
+                print("\n\n### Olá, \(client.name) !")
                 return client
             }
         }

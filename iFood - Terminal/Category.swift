@@ -6,5 +6,6 @@
 //
 
 enum Category: String, CaseIterable {
-    case fastFood = "Fast Food", brazilian = "Comida Brasileira", japonese = "Comida Japonesa", pizza = "Pizza", soda = "Refrigerante"
+    case Mercado, Promoções, Pizza, Lanches, Japonesa, Brasileira, Saudável, Árabe, Bebidas, Sorvetes
+    case CozinhaRapida = "Cozinha Rápida", Mexicana, Italiana, HotDog = "Hot Dog"
 }

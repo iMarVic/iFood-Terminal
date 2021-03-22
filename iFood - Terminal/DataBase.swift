@@ -11,8 +11,8 @@ class DataBase {
     var restaurants: [Restaurant] = []
     var orders: [Order] = []
     
-    private let portoAlegre: Localization = Localization(country: "Brazil", state: "RS", city: "Porto Alegre", street: "Av Ipirnanga", number: 4980, complement: "apt 11")
-    private let campoGrande: Localization = Localization(country: "Brazil", state: "MS", city: "Campo Grande", street: "", number: 15, complement: "")
+    private let portoAlegre: Localization = Localization(country: "Brasil", state: "RS", city: "Porto Alegre", street: "Av Ipirnanga", number: 4980, complement: "apt 11")
+    private let campoGrande: Localization = Localization(country: "Brasil", state: "MS", city: "Campo Grande", street: "", number: 15, complement: "")
     
     init(){
         existingClients()
@@ -28,23 +28,29 @@ class DataBase {
     }
     
     func existingRestaurants() {
-        let restaurant1 = Restaurant(name: "Dog do Zé", CNPJ: "00.000.000/000-01", localization: portoAlegre, user: "ze", password: "1234")
-        restaurant1.addCategories(category: .brazilian)
-        restaurant1.addCategories(category: .fastFood)
-
-        let product1: Product = Product(name: "Dog simples", price: 9.00, category: .fastFood, description: "")
-        let product2: Product = Product(name: "Coca Cola lata", price: 3.50, category: .soda, description: "")
-        let product3: Product = Product(name: "Casquinha de sorvete", price: 4.00, category: .fastFood, description: "")
         
-        restaurant1.addProduct(product: product1)
-        restaurant1.addProduct(product: product2)
-        restaurant1.addProduct(product: product3)
+        let restaurant1 = Restaurant(name: "Dog do Zé", CNPJ: "00.000.000/000-01", localization: portoAlegre, user: "ze", password: "1234")
+        restaurant1.addCategories(category: .Brasileira)
+        restaurant1.addCategories(category: .CozinhaRapida)
+        
+        restaurant1.addProduct(Product(name: "Dog simples", price: 9.00, category: .HotDog, description: ""))
+        restaurant1.addProduct(Product(name: "Coca Cola lata", price: 3.50, category: .Bebidas, description: ""))
+        restaurant1.addProduct(Product(name: "Casquinha de sorvete", price: 4.00, category: .Sorvetes, description: ""))
+        
+        let restaurant2 = Restaurant(name: "Décima Pizzas - Universitário", CNPJ: "00.000.000/000-06", localization: portoAlegre, user: "espetinho", password: "5746")
+        let restaurant3 = Restaurant(name: "Lancheria e Pizzaria", CNPJ: "00.000.000/000-05", localization: portoAlegre, user: "lanche", password: "5746")
+        restaurant3.addCategories(category: .Pizza)
+        
+        restaurant2.addProduct(Product(name: "Pizza Calabresa", price: 32.00, category: .Pizza, description: "Calabresa, molho vermelho e cebola"))
+        restaurant2.addProduct(Product(name: "Pizza Muçarela", price: 35.00, category: .Pizza, description: "Queijo muzarela e creme branco"))
+        restaurant2.addProduct(Product(name: "Pizza Frango com Catupiry", price: 40.00, category: .Pizza, description: "Frango desfiado, catupiry e queijo muzarela"))
         
         restaurants.append(restaurant1)
-        restaurants.append(Restaurant(name: "Pastel do Jacaré", CNPJ: "00.000.000/000-02", localization: campoGrande, user: "jacare", password: "4332"))
-        restaurants.append(Restaurant(name: "Rodolfo crepes", CNPJ: "00.000.000/000-03", localization: campoGrande, user: "rody", password: "5678"))
-        restaurants.append(Restaurant(name: "Batatinha da Sonia", CNPJ: "00.000.000/000-04", localization: portoAlegre, user: "sonia", password: "1010"))
-        restaurants.append(Restaurant(name: "Espetinho do centro", CNPJ: "00.000.000/000-05", localization: portoAlegre, user: "espetinho", password: "5746"))
+        restaurants.append(restaurant2)
+        restaurants.append(Restaurant(name: "La Fruta Açaí - Bento", CNPJ: "00.000.000/000-02", localization: portoAlegre, user: "acai", password: "4332"))
+        restaurants.append(Restaurant(name: "Sapore Sublime", CNPJ: "00.000.000/000-03", localization: portoAlegre, user: "rody", password: "5678"))
+        restaurants.append(Restaurant(name: "Croasonho - Bento", CNPJ: "00.000.000/000-04", localization: portoAlegre, user: "sonia", password: "1010"))
+        restaurants.append(restaurant3)
     }
     
     func createClient() {
@@ -137,7 +143,7 @@ class DataBase {
             }
             
         } else {
-            print("\n## Nenhum restaurante encontrado em sua região ou categoria selecionada\n")
+            print("\n## Nenhum restaurante encontrado em sua região ou na categoria selecionada\n")
             print("########################## \n")
         }
         
@@ -242,7 +248,7 @@ class DataBase {
                                                 
                                                 clientSession.myPayments();
 
-                                                print("\n### Informe a opção de pagamento desejada ou digite + para adicionar um novo metodo de pagamento: ", terminator: "")
+                                                print("\n### Informe a opção de pagamento desejada ou digite '+' para adicionar um novo metodo de pagamento: ", terminator: "")
                                                 
                                                 let opFormPayment = readLine() ?? "erro"
                                                 
@@ -268,7 +274,7 @@ class DataBase {
                                                                 }
                                                                 
                                                                 if myCards.count > 0 {
-                                                                    print("\n### Informe o \(formPayment.rawValue) desejado, ou digite + para adicionar um novo e 0 para voltar ao menu anterior: ", terminator: "")
+                                                                    print("\n### Informe o \(formPayment.rawValue) desejado, ou digite '+' para adicionar um novo e 0 para voltar ao menu anterior: ", terminator: "")
                                                                     
                                                                     let opCard = readLine() ?? "erro"
                                                                     
@@ -293,7 +299,7 @@ class DataBase {
                                                                     
                                                                     while true {
                                                                         print("### Nenhum \(formPayment) encontrado! ")
-                                                                        print("Digite '+' para adicionar um novo \(formPayment) ou digite 0 para voltar ao menu anterior")
+                                                                        print("Digite '+' para adicionar um novo \(formPayment) ou digite 0 para voltar ao menu anterior: ", terminator: "")
                                                                         
                                                                         let opPayment = readLine() ?? "erro"
                                                                         
@@ -486,7 +492,7 @@ class DataBase {
                                     let cards = clientSession.myCards(formPayment: formPayment)
                                     
                                     print("Digite '+' para adicionar um novo \(formPayment.rawValue) ou o indice de um cartão para remover-lo")
-                                    print("Para retornar ao menu anterior digite 0", terminator: "")
+                                    print("Para retornar ao menu anterior digite 0: ", terminator: "")
                                     
                                     let opCard = readLine() ?? "erro"
                                     
@@ -614,7 +620,7 @@ class DataBase {
                 clientSession.myLocalizations()
                 
                 print("\nSelecione o endereço de entrega ou x para cancelar pedido")
-                print("Para adicionar um novo endereço digite '+' ", terminator: "")
+                print("Para adicionar um novo endereço digite '+' : ", terminator: "")
                 
                 let opDelivery = readLine() ?? "erro"
                 

@@ -30,8 +30,11 @@ class Restaurant {
         categories.append(category)
     }
     
-    func addProduct(product: Product) {
+    func addProduct(_ product: Product) {
         menu.append(product)
+        if !categories.contains(product.category) {
+            categories.append(product.category)
+        }
     }
     
     func addRate(rate: Int) {
